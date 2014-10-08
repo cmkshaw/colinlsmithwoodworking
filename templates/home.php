@@ -26,43 +26,7 @@ get_header(); ?>
 				<?php endif; ?>
                 
 
-				<?php	
-                /**************************
-                * Portfolio
-                ****************************/
-                if ( of_get_option ( 'enable_portfolio', '1' ) ) : ?>
-                
-                    <?php $query_portfolio_posts = new WP_Query(
-                          array(
-                              'post_type'			=> 'portfolio',
-                              'posts_per_page'		=> of_get_option( 'home_portfolio_count','12'),
-                              'no_found_rows'		=> true,
-                          )
-                      );		
-					if ( $query_portfolio_posts->posts ) { ?>
-                    
-						<?php wp_enqueue_script( 'att-portfolio-filter', ATT_JS_DIR .'/portfolio-filter.js', array( 'jquery' ), '1.0', true ); ?>
-                    
-                        <div id="home-portfolio">
-                            
-                          
-                            <div id="portfolio-wrap">
-                                <div id="portfolio-filter-content" class="portfolio-isotope clr"> 
-                                	<?php $att_count = 0 ?>
-                                    <?php foreach( $query_portfolio_posts->posts as $post ) : setup_postdata($post); ?>
-                                    	<?php $att_count++; ?>
-                                        <?php get_template_part( 'content','portfolio' ); ?>
-                                        <?php if ( $att_count == '4' ) { echo '<div class="clr"></div>'; $att_count=0; } ?>
-                                    <?php endforeach; ?>
-                                </div><!-- /portfolio-isotope -->
-                            </div><!-- #portfolio-wrap -->
-                        </div><!-- /home-portfolio -->
-                
-               		<?php } ?>
-                    
-					<?php wp_reset_postdata(); ?>
-                
-                <?php endif; ?>
+		
     
 			</div><!-- #home-wrap -->   
 

@@ -1030,6 +1030,16 @@ html[xmlns] .slides {
     margin-left: 4%;
     margin-bottom: 4%;
     width: 22%;
+    position:relative;
+}
+
+.portfolio-entry a p{
+    position:absolute;
+    bottom:0px;
+    color:#fff;
+    text-transform: uppercase;
+    font-size:24px;
+    margin:10px 5px;
 }
 
 .portfolio-entry-fade {
