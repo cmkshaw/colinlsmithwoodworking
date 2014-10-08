@@ -8,12 +8,12 @@
 	    -moz-box-sizing: border-box;
 	    -webkit-box-sizing: border-box;
 	}
-	.flex-direction-nav { display: none }
+	/*.flex-direction-nav { display: none }*/
 	.flex-caption { display: none }
 
 	
 	.footer-box {
-	    margin-bottom: 40px;
+	    margin-bottom: 0px;
 	    width: 100%;
 	    margin-right: 0;
 	}
@@ -45,7 +45,6 @@
 		width: 100%;
 		background: #fff;
 		z-index:999;
-
 	}
 
 	#site-navigation .dropdown-menu li {
@@ -60,6 +59,7 @@
 
 	#masthead{
 		max-height: 60px;
+		position: relative;
 	}
 
 	.logo{
