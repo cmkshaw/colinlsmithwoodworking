@@ -3,8 +3,9 @@ jQuery(function($){
 		
 		$(".fitvids").fitVids();
 		
-		$("#menu-toggle").click(function(){
-			$('#site-navigation').slideToggle();
+		$("#menu-toggle").click(function(e){
+			e.preventDefault();
+			$('#site-navigation').slideToggle(500);
 		});
 		
 	});

@@ -39,11 +39,12 @@
 	#site-navigation{
 		display: none;
 		margin-top: 5px;
-		top: 50px;
+		top: 65px;
 		right:0;
 		position:absolute;
 		width: 100%;
 		background: #fff;
+		z-index:999;
 
 	}
 
@@ -63,6 +64,10 @@
 
 	.logo{
 		max-width: 60px;
+	}
+
+	#page-header{
+		margin:20px 0;
 	}
 
 }
