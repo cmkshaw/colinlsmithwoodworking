@@ -10,9 +10,8 @@
 	}
 	.flex-direction-nav { display: none }
 	.flex-caption { display: none }
-	#site-navigation select { display: block }
-	#site-navigation ul { display: none }
-	#site-navigation { margin-top: -10px }
+
+	
 	.footer-box {
 	    margin-bottom: 40px;
 	    width: 100%;
@@ -29,6 +28,42 @@
 /* Smaller then tablet portrait
 ================================================== */
 @media only screen and (max-width: 767px) { 
+
+	#menu-toggle{
+		display: inline-block;
+		float:right;
+		margin-top: 20px;
+		right:0px;
+	}
+
+	#site-navigation{
+		display: none;
+		margin-top: 5px;
+		top: 50px;
+		right:0;
+		position:absolute;
+		width: 100%;
+		background: #fff;
+
+	}
+
+	#site-navigation .dropdown-menu li {
+		display: block;
+		float: none;
+		margin:0;
+	}
+
+	#site-navigation .dropdown-menu li > ul{
+		display: none;
+	}
+
+	#masthead{
+		max-height: 60px;
+	}
+
+	.logo{
+		max-width: 60px;
+	}
 
 }
 /* Ipad Mini Portrait Edits

@@ -14,7 +14,9 @@
     </div><!-- #wrap -->
 
     <div id="footer-wrap">
+
         <footer id="footer" class="container">
+
             <div id="footer-widgets" class="clr site-footer">
                 <div class="footer-box">
                     <?php dynamic_sidebar( 'footer-one' ); ?>
@@ -29,7 +31,9 @@
                     <?php dynamic_sidebar( 'footer-four' ); ?>
                 </div><!-- .footer-box -->
             </div><!-- #footer-widgets -->
+            &copy; Colin Smith 2014
         </footer><!-- #footer -->
+
     </div><!-- #footer-wrap -->
     
     <?php att_hook_site_after(); ?>

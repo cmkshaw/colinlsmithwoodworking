@@ -19,7 +19,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    font-family: 'Lato', sans-serif;
 }
 
 blockquote p:last-child {
@@ -632,7 +631,11 @@ p a,p a:visited {
 
 /* Main Navigation
 ================================================== */
-#site-navigation select {
+#site-navigation  {
+    display: block;
+}
+
+#menu-toggle{
     display: none;
 }
 

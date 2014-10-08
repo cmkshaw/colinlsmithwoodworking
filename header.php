@@ -30,6 +30,7 @@
                     <h2><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo get_bloginfo( 'name' ); ?></a></h2>
                 <?php } ?>
             </div><!-- .logo -->
+            <a id="menu-toggle" href="#">Menu</a>
 			<nav id="site-navigation" class="navigation main-navigation grid-1 clr" role="navigation">
 				<?php wp_nav_menu( array(
                     'theme_location'	=> 'main_menu',
