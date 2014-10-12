@@ -29,6 +29,15 @@
 ================================================== */
 @media only screen and (max-width: 767px) { 
 
+	.portfolio-entry{
+		width:100%;
+		margin-left: 0;
+	}
+
+	#portfolio-cats{
+		margin: 30px 0;
+	}
+
 	#menu-toggle{
 		display: inline-block;
 		float:right;
