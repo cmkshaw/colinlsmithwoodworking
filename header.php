@@ -14,6 +14,7 @@
     <title><?php wp_title( '' ); ?><?php if (wp_title( '', false )) { echo ' |'; } ?> <?php bloginfo( 'name' ); ?></title>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <link href='http://fonts.googleapis.com/css?family=Lato|PT+Mono' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <?php wp_head(); ?>    
 </head>
 
@@ -30,6 +31,7 @@
                     <h2><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo get_bloginfo( 'name' ); ?></a></h2>
                 <?php } ?>
             </div><!-- .logo -->
+            <h1 class="logoTitle">Colin Smith<br>Woodworking</h1>
             <a id="menu-toggle" href="#">Menu</a>
 			<nav id="site-navigation" class="navigation main-navigation grid-1 clr" role="navigation">
 				<?php wp_nav_menu( array(

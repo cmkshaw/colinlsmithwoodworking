@@ -3,7 +3,7 @@
 @media only screen and (max-width: 959px) { 
 
 	body {
-	    padding: 0 80px;
+	    padding: 0 30px;
 	    box-sizing: border-box;
 	    -moz-box-sizing: border-box;
 	    -webkit-box-sizing: border-box;
@@ -28,6 +28,17 @@
 /* Smaller then tablet portrait
 ================================================== */
 @media only screen and (max-width: 767px) { 
+
+	.logoTitle{
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    float:left;
+    margin-top:16px;
+    font-size:14px;
+    margin-left: 5px;
+    
+	}
 
 	.portfolio-entry{
 		width:100%;

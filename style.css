@@ -572,6 +572,19 @@ p a,p a:visited {
 /* Headings
 ================================================== */
 /*page heading*/
+.logoTitle{
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    float:left;
+    line-height: 1.2;
+    margin-top:60px;
+    font-size:20px;
+    font-weight:400;
+    color:#222;
+    font-family: 'Lato', sans-serif;
+}
+
 #page-header {
     margin-bottom: 60px;
     margin-top: 60px;
@@ -617,6 +630,7 @@ p a,p a:visited {
 
 .logo {
     display: inline-block;
+    float:left;
 }
 
 .logo img{
@@ -639,6 +653,8 @@ p a,p a:visited {
 
 #menu-toggle{
     display: none;
+    font-family: 'PT Mono';
+    text-transform: uppercase;
 }
 
 /*core*/
