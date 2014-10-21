@@ -28,16 +28,16 @@
 /* Smaller then tablet portrait
 ================================================== */
 @media only screen and (max-width: 767px) { 
-
 	.logoTitle{
-    display: inline-block;
-    vertical-align: top;
-    text-transform: uppercase;
-    float:left;
-    margin-top:16px;
-    font-size:14px;
-    margin-left: 5px;
-    
+		margin-top:16px;
+		display: inline-block;
+	}
+	.logoTitle a{
+	    vertical-align: top;
+	    text-transform: uppercase;
+	    float:left;
+	    font-size:14px;
+	    margin-left: 5px;
 	}
 
 	.portfolio-entry{
