@@ -24,7 +24,7 @@ get_header(); ?>
                     </header><!-- #page-header -->
                 </div><!-- #page-header-wrap -->
                                        
-                <article id="post" class="span_17 col col-1 clr">
+                <article class="col col-1 clr">
                     <?php if ( has_post_thumbnail() ) { ?>
                         <div id="page-featured-img">
                             <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id() ); ?>" alt="<?php get_the_title(); ?>" />
