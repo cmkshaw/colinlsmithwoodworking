@@ -35,7 +35,7 @@ blockquote:before {
     line-height: .1em;
     position: absolute;
     top: 25px;
-    font-family: Arial;
+    font-family: 'Muli', sans-serif;
 }
 
 blockquote:before,blockquote:after,q:before,q:after {
@@ -460,7 +460,7 @@ body {
 ================================================== */
 h1,h2,h3,h4,h5,h6 {
     font-weight: 500;
-    font-family: 'PT Mono';
+    font-family: 'Muli', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -583,10 +583,10 @@ p a,p a:visited {
   
 .logoTitle a{
     line-height: 1.2;
-    font-size:20px;
+    font-size:18px;
     font-weight:400;
     color:#222;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 
 #page-header {
@@ -657,7 +657,7 @@ p a,p a:visited {
 
 #menu-toggle{
     display: none;
-    font-family: 'PT Mono';
+    font-family: 'Muli', sans-serif;
     text-transform: uppercase;
 }
 
@@ -735,7 +735,7 @@ p a,p a:visited {
     color: #aaa;
     cursor: pointer;
     font-size: 14px;
-    font-family: 'PT Mono';
+   font-family: 'Muli', sans-serif;
     text-transform: uppercase;
 }
 
@@ -743,6 +743,8 @@ p a,p a:visited {
     color: #000;
     text-decoration: none;
     border-bottom:4px solid #ccc;
+    -webkit-transition: all .3s; /* For Safari 3.1 to 6.0 */
+    transition: all .3s;
 }
 
 /*drop-down styles*/
@@ -1003,7 +1005,7 @@ html[xmlns] .slides {
 /*category filter*/
 #portfolio-cats {
     margin: 60px 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Muli', sans-serif;
 }
 
 #portfolio-cats li {
@@ -1049,10 +1051,18 @@ html[xmlns] .slides {
 /*portfolio entry*/
 .portfolio-entry {
     float: left;
-    margin-left: 4%;
+    margin-left: 1%;
     margin-bottom: 4%;
-    width: 22%;
+    width: 24%;
     position:relative;
+    -webkit-transition: opacity .3s ease-in; /* For Safari 3.1 to 6.0 */
+    transition: opacity .3s ease-in;
+}
+
+.portfolio-entry:hover{
+    opacity:.8;
+    -webkit-transition: all .2s ease-in; /* For Safari 3.1 to 6.0 */
+    transition: all .2 ease-in;
 }
 
 .portfolio-entry a p{
@@ -1202,6 +1212,7 @@ html[xmlns] .slides {
 }
 
 #single-portfolio-related h3 span {
+    font-size:22px;
 }
 
 /* Blog Entries
@@ -1212,7 +1223,7 @@ html[xmlns] .slides {
     font-size: 24px;
     line-height: 1.4em;
     font-weight: 500;
-    font-family: 'PT Mono';
+    font-family: 'Muli', sans-serif;
 }
 
 .loop-entry {
@@ -1253,7 +1264,7 @@ html[xmlns] .slides {
 /*title*/
 #post h1 {
     margin: 7px 0 15px;
-    font-family: 'PT Mono';
+    font-family: 'Muli', sans-serif;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 22px;
@@ -1311,7 +1322,7 @@ html[xmlns] .slides {
 
 .sidebar-container h4 {
     color: #000;
-    font-family: 'PT Mono';
+    font-family: 'Muli', sans-serif;
     font-size: 15px;
     font-weight: 500;
     margin: 0 0 30px;
@@ -1474,7 +1485,7 @@ a.theme-button,button,input[type=button],input[type=submit] {
     color: #909090;
     cursor: pointer;
     display: inline-block;
-    font-family: 'PT Mono';
+    font-family: 'Muli', sans-serif;
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 5px;
@@ -1540,7 +1551,7 @@ a.theme-button:hover,button:hover,input[type=button]:hover,input[type=submit]:ho
 
 .comment-meta .fn {
     color: #000;
-    font-family: 'PT Mono';
+    font-family: 'Muli', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 0;
@@ -1562,7 +1573,7 @@ a.theme-button:hover,button:hover,input[type=button]:hover,input[type=submit]:ho
 .comment-reply-link,.comment-edit-link,#cancel-comment-reply-link {
     cursor: pointer;
     display: inline-block;
-    font-family: 'PT Mono';
+    font-family: 'Muli', sans-serif;
     font-size: 13px;
     font-weight: 500;
     line-height: 1.65em;
@@ -1667,7 +1678,7 @@ span.required {
 }
 
 #footer .heading {
-    font-family: 'PT Mono';
+    font-family: 'Muli', sans-serif;
     font-size: 15px;
     font-weight: 500;
     margin-bottom: 30px;
@@ -1764,5 +1775,40 @@ input.wpcf7-not-valid[type=text],input.wpcf7-not-valid[type=password],input.wpcf
     border: none;
 }
 
-/* ABOUT
-================================================== */
+/* Social Media Icons =====================================*/
+
+#copyright{
+    float:left;
+    display: inline-block;
+}
+
+ul#sm { display: inline-block; float:right;}
+ul#sm li { float: left; margin:0 10px 5px 0}
+ul#sm li:nth-last-child(1) { margin-right:0 }
+ul#sm li a { width:25px; height: 25px; display: block; text-indent:-99999px; background-size:25px 25px; opacity:.8;}
+ul#sm li a:hover{
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    opacity:.5;
+}
+
+a.instagram { 
+    background-image:url("images/svg/38-instagram.svg");
+}
+
+a.facebook { 
+    background-image:url("images/svg/06-facebook.svg");
+}
+
+a.pinterest { 
+    background-image:url("images/svg/33-pinterest.svg");
+}
+
+a.googleplus { 
+    background-image:url("images/svg/40-google-plus.svg");
+}
+
+
+
+

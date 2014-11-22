@@ -31,7 +31,18 @@
                     <?php dynamic_sidebar( 'footer-four' ); ?>
                 </div><!-- .footer-box -->
             </div><!-- #footer-widgets -->
-            &copy; Colin Smith 2014
+            <p id="copyright">&copy; Colin Smith 2014</p>
+
+
+            
+            <ul id="sm">
+                    
+                    <li><a class="instagram" href="http://instagram.com/colinsmithwoodworking" target="_blank">Instagram</a></li>
+                    <li><a class="facebook" href="https://www.facebook.com/colinsmithwoodworking" target="_blank">Facebook</a></li>
+                    <li><a class="googleplus" href="https://plus.google.com/+Colinsmithwoodworking/" target="_blank">Google Plus</a></li>
+                    <li><a class="pinterest" href="http://www.pinterest.com/colinsmithwood/" target="_blank">Pinterest</a></li>
+             </ul>
+       
         </footer><!-- #footer -->
 
     </div><!-- #footer-wrap -->
