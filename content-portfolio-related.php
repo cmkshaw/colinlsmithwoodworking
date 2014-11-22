@@ -26,9 +26,28 @@ if ( of_get_option( 'portfolio_more', '1' ) == '1' ) { ?>
 		<div class="clear"></div>
             <div id="single-portfolio-related" class="clr">
 				<h3><span><?php _e('Other Work', 'att' ); ?></span></h3>
+
+				<?php 
+				
+				$postID = get_the_ID();
+				
+				?>
                 <div class="grid-container">
+
+
+
                 <?php $att_count=0; ?>
-				<?php foreach( $query_portfolio_posts->posts as $post ) : setup_postdata($post); ?>
+				<?php foreach( $query_portfolio_posts->posts as $post ) : setup_postdata($post); 
+				$relatedID = get_the_ID(); 
+				
+
+				if ($relatedID == $postID){
+					echo "";
+				}
+				else{
+				?>
+                	
+
                 	<?php $att_count++; ?>
                     <article id="post-<?php the_ID(); ?>" class="portfolio-entry col-<?php echo $att_count; ?>">
 						<?php if ( has_post_thumbnail() ) {  ?>
@@ -36,6 +55,7 @@ if ( of_get_option( 'portfolio_more', '1' ) == '1' ) { ?>
                         <?php } ?>
                     </article><!-- .portfolio-entry -->
                     <?php if ( $att_count == '4' ) { echo '<div class="clr"></div>'; $att_count=0; } ?>
+				<?php } ?>
 				<?php endforeach; ?>
 			</div><!--/grid-container -->
 		</div><!-- /single-portfolio-related -->

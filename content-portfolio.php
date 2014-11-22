@@ -29,6 +29,7 @@ if ( is_singular( 'portfolio') ) { ?>
 	); ?>
 	
 	<article id="single-portfolio-post" class="clr"> 
+
 	
 		<div class="clr">
 	   
