@@ -51,7 +51,10 @@ if ( of_get_option( 'portfolio_more', '1' ) == '1' ) { ?>
                 	<?php $att_count++; ?>
                     <article id="post-<?php the_ID(); ?>" class="portfolio-entry col-<?php echo $att_count; ?>">
 						<?php if ( has_post_thumbnail() ) {  ?>
-                            <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( the_title_attribute( 'echo=0' ) ); ?>"><img src="<?php echo aq_resize( wp_get_attachment_url( get_post_thumbnail_id() ),  att_img( 'port_entry_width' ), att_img( 'port_entry_height' ), att_img( 'port_entry_crop' ) ); ?>" alt="<?php echo esc_attr( the_title_attribute( 'echo=0' ) ); ?>" class="portfolio-entry-img" /></a>           
+                            <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( the_title_attribute( 'echo=0' ) ); ?>">
+                            <img src="<?php echo aq_resize( wp_get_attachment_url( get_post_thumbnail_id() ),  att_img( 'port_entry_width' ), att_img( 'port_entry_height' ), att_img( 'port_entry_crop' ) ); ?>" alt="<?php echo esc_attr( the_title_attribute( 'echo=0' ) ); ?>" class="portfolio-entry-img" />
+							<p class="entry-text"><?php echo esc_attr( the_title_attribute( 'echo=0' ) ); ?></p>
+                            </a>           
                         <?php } ?>
                     </article><!-- .portfolio-entry -->
                     <?php if ( $att_count == '4' ) { echo '<div class="clr"></div>'; $att_count=0; } ?>
