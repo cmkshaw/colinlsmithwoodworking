@@ -14,8 +14,6 @@
     <meta property="og:title" content="Colin Smith Woodworking" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://colinsmithwoodworking.com" />
-    <meta property="og:image" content="http://colinsmithwoodworking.com/wp-content/uploads/2014/09/LOGLOGO1801.jpg" />
-    <meta name="description" content="Colin Smith is a cabinet maker and carpenter in Toronto, ON.">
     <title><?php wp_title( '' ); ?><?php if (wp_title( '', false )) { echo ' |'; } ?> <?php bloginfo( 'name' ); ?></title>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
