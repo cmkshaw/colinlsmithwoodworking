@@ -34,7 +34,7 @@
 	}
 	.logoTitle a{
 	    vertical-align: top;
-	    text-transform: uppercase;
+	    text-transform: none;
 	    float:left;
 	    font-size:14px;
 	    margin-left: 5px;

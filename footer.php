@@ -38,6 +38,7 @@
             <ul id="sm">
                     
                     <li><a class="instagram" href="http://instagram.com/colinsmithwoodworking" target="_blank">Instagram</a></li>
+                    <li><a class="twitter" href="https://twitter.com/colinsmithwood" target="_blank">Twitter</a></li>
                     <li><a class="facebook" href="https://www.facebook.com/colinsmithwoodworking" target="_blank">Facebook</a></li>
                     <li><a class="googleplus" href="https://plus.google.com/+Colinsmithwoodworking/" target="_blank">Google Plus</a></li>
                     <li><a class="pinterest" href="http://www.pinterest.com/colinsmithwood/" target="_blank">Pinterest</a></li>
