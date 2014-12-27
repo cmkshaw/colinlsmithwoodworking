@@ -17,7 +17,7 @@ if ( of_get_option( 'portfolio_more', '1' ) == '1' ) { ?>
 		array(
 			'orderby' 			=> 'rand',
 			'post_type'			=> 'portfolio',
-			'posts_per_page'	=> '8',
+			// 'posts_per_page'	=> '8',
 			'no_found_rows'		=> true,
 		)
 	);
