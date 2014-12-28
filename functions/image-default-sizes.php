@@ -23,7 +23,7 @@ if ( ! function_exists( 'att_img' ) ) :
 		
 		//portfolio posts
 		if ( $args == 'port_post_width' ) return '550';
-		if ( $args == 'port_post_height' ) return '455';
+		if ( $args == 'port_post_height' ) return '550';
 		if ( $args == 'port_post_crop' ) return 'false';
 		
 	}
