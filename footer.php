@@ -31,7 +31,7 @@
                     <?php dynamic_sidebar( 'footer-four' ); ?>
                 </div><!-- .footer-box -->
             </div><!-- #footer-widgets -->
-            <p id="copyright">&copy; Colin Smith 2014</p>
+            <p id="copyright">&copy; Colin Smith 2015</p>
 
 
             

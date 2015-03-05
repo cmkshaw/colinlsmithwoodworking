@@ -46,5 +46,20 @@ get_header(); ?>
 
     	</div><!-- #content -->
 	</div><!-- #primary -->
+
+	<script type="application/ld+json">
+		{ "@context" : "http://schema.org",
+		  "@type" : "Person",
+		  "name" : "Colin Smith",
+		  "url" : "http://www.colinsmithwoodworking.com",
+		  "logo": "http://colinsmithwoodworking.com/wp-content/uploads/2014/09/LOGLOGO1801.jpg"
+		  "sameAs" : [ "https://www.facebook.com/colinsmithwoodworking",
+		      "https://instagram.com/colinsmithwoodworking/",
+		      "http://ca.linkedin.com/pub/colin-smith/b3/174/b26",
+		      "https://plus.google.com/+Colinsmithwoodworking/",
+		      "https://twitter.com/colinsmithwood",
+		      "https://www.pinterest.com/colinsmithwood/"] 
+		}
+	</script>
     
 <?php get_footer(); ?>
